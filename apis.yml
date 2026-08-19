@@ -33,7 +33,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct-absorbed
 x-status-note: getcruise.com 301-redirects to gm.com/innovation/path-to-autonomous; Cruise folded into General Motors (Dec 2024). No public API surface.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
