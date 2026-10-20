@@ -1,4 +1,5 @@
 aid: cruise
+
 deliveryModel:
   model: unknown
   open_source: false
@@ -10,6 +11,7 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+
 accessModel:
   pricing: unknown
   onboarding: unknown
@@ -21,34 +23,44 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cruise.png
+
 name: Cruise
-description: 'Cruise was an autonomous-vehicle (robotaxi) company founded in 2013 and
-  majority-owned by General Motors, building self-driving technology and operating driverless
-  ride-hail services in San Francisco and other U.S. cities. Backed by GM, Honda, SoftBank
-  Vision Fund, Spark Capital, Y Combinator and others, Cruise suspended operations after
-  a 2023 incident and, in December 2024, GM announced it would end robotaxi development
-  and fold the Cruise team into GM''s own autonomous and driver-assistance programs. As
-  of 2026 the getcruise.com domain 301-redirects to GM''s autonomous-driving pages. Cruise
-  never published a public developer API, SDK, or documentation surface.'
+
+description: Cruise was an autonomous-vehicle (robotaxi) company founded in 2013 and majority-owned by General Motors, building self-driving technology and operating driverless ride-hail services in San Francisco and other U.S. cities. Backed by GM, Honda, SoftBank Vision Fund, Spark Capital, Y Combinator and others, Cruise suspended operations after a 2023 incident and, in December 2024, GM announced it would end robotaxi development and fold the Cruise team into GM's own autonomous and driver-assistance programs. As of 2026 the getcruise.com domain 301-redirects to GM's autonomous-driving pages. Cruise never published a public developer API, SDK, or documentation surface.
+
 url: https://raw.githubusercontent.com/api-evangelist/cruise/refs/heads/main/apis.yml
+
 x-api-posture: no-product-api
+
 x-api-posture-basis: observed
+
 x-type: company
+
 x-source: vc-portfolio
+
 x-backed-by:
 - initialized-capital
 - softbank-vision-fund
 - spark-capital
 - sv-angel
 - y-combinator
+
 x-tier: stub
-x-tier-reason: portfolio-lead
+
+x-tier-reason: 'defunct: enrichment pass 2026-10-20 (local-v5) found getcruise.com 301-redirects (invalid TLS cert) to gm.com/innovation/path-to-autonomous; Cruise folded into GM, no API surface (was portfolio-lead)'
+
 x-status: defunct-absorbed
+
 x-status-note: getcruise.com 301-redirects to gm.com/innovation/path-to-autonomous; Cruise folded into General Motors (Dec 2024). No public API surface.
+
 specificationVersion: '0.23'
+
 created: '2026-07-17'
+
 modified: '2026-07-18'
+
 tags:
 - Company
 - Frontier Tech
@@ -58,19 +70,36 @@ tags:
 - Automotive
 - Mobility
 - General Motors
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/cruise-hosts.yml
 - type: DomainSecurity
   url: security/cruise-domain-security.yml
 - type: Website
   url: https://getcruise.com/
+
+apis: []
+
 x-enrichment:
-  date: '2026-07-19'
-  status: backfilled
-  pass: local-v1
-  note: backfilled from .gitignore signal + verified work evidence
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v5
+
+x-coverage:
+  state: none
+  reason: defunct
+  detail: getcruise.com serves an invalid TLS certificate and 301-redirects to gm.com/innovation/path-to-autonomous after GM ended Cruise robotaxi development; api.getcruise.com answers nothing and no developer surface exists.
+  evidence:
+  - url: https://getcruise.com/
+    status: 301
+  - url: http://getcruise.com/
+    status: 301
+  checked: '2026-10-20'

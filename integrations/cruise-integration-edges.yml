@@ -1,0 +1,16 @@
+generated: '2026-10-20'
+method: none
+source:
+- https://zapier.com/apps/cruise/integrations
+- https://n8n.io/integrations/cruise/
+- https://composio.dev/toolkits/cruise
+- https://monid.ai/tools/cruise
+checked:
+- https://composio.dev/toolkits/cruise
+- https://monid.ai/tools/cruise
+- https://n8n.io/integrations/cruise/
+- https://zapier.com/apps/cruise/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
